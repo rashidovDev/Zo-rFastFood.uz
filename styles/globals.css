@@ -1,9 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,3 +16,242 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* NAVBAR */
+.navbar {
+  border-bottom: 1px solid black;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.navbar > .nav-logo{
+  width: 25%;
+  text-align: center;
+}
+.navbar > .nav-items{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar > .nav-items > .nav-left {
+   display: flex;
+}
+.navbar > .nav-items > .nav-left > p {
+  font-size: 18px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.navbar > .nav-items > .nav-left p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: crimson;
+  transition: all .3s;
+} 
+.navbar > .nav-items > .nav-left p:hover::before {
+  width: 100%;
+}
+.navbar > .nav-items > .nav-right {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+.navbar > .nav-items > .nav-right p{
+  padding: 0 1px;
+}
+.navbar > .nav-login{
+  width: 25%;
+  text-align: center;
+}
+.navbar > .nav-login > button{
+  background-color: crimson;
+  padding: 10px 20px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+.footer-items{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.navbar > .nav-toggle {
+  display: none;
+}
+
+@media (max-width : 700px) {
+  .navbar{
+    margin: 20px;
+  }
+  .navbar > .nav-items {
+    position: absolute;
+    top: 120px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all .45s;
+    z-index: 4;
+  }
+  .navbar > .nav-items > .nav-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    padding-top: 50px;
+  }
+  .navbar > .nav-items > .nav-left p{
+    padding-bottom: 40px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .navbar > .nav-items.open {
+    transform: translateX(0);
+}
+.navbar > .nav-items > .nav-left p::before {
+    background : transparent
+}
+  .navbar > .nav-login {
+    display:  none;
+}
+  .navbar > .nav-items.open {
+    transform: translateX(0);
+}
+.navbar > .nav-items > a::before {
+    background : transparent
+}
+.navbar .nav-toggle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav-toggle > .bar {
+    position: relative;
+    width: 32px;
+    height: 2px;
+    background-color: #111;
+}
+.nav-toggle > .bar::before,
+.nav-toggle > .bar::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #111;
+    border-radius: 2px;
+    transition: all 0.45s ease-in-out;
+}
+.nav-toggle > .bar::before {
+    width: 25px;
+    transform: translateY(-8px);
+    right: 0;
+}
+.nav-toggle > .bar::after {
+    width: 32px;
+    transform: translateY(8px);
+}
+.nav-toggle.open > .bar {
+    transform: translateX(-40px);
+    background: transparent;
+    transition: 0.5s ease;
+}
+.nav-toggle.open > .bar::before {
+    width: 32px;
+    transform: rotate(45deg) translate(26px, -26px);
+}
+.nav-toggle.open > .bar::after {
+    transform: rotate(-45deg) translate(26px, 26px);
+}
+
+
+/* ITEMS */
+.grid-item {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* FOOTER */
+.footer-items{
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footer-social{
+  text-align: center;
+  padding-bottom: 15px;
+  text-align: center;
+
+}
+.footer-contact{
+  text-align: center;
+  padding-bottom: 15px;
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15px;
+}
+.nav-bottom{
+  width: 80%;
+  margin: auto;
+  overflow: scroll;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+/* BRANCH */
+.branch-items{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.slider{
+  padding-top: 20px;
+}
+.img-carousel{
+  height: 150px;
+}
+/* CONTACT */
+.contact-items{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.contact-element{
+  width: 100%;
+}
+.contact-support{
+  width: 100%;
+}
+
+/* ABOUT */
+.about{
+  width: 90%;
+ 
+}
+}
+
+

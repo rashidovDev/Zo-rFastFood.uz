@@ -1,0 +1,31 @@
+.total {
+    cursor: pointer;
+    padding: 20px 10px;
+    width: 130px;
+    height: 120px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: crimson;
+    z-index: 3;
+    border-radius: 20px;
+    color: #fff;
+}
+.totalItems{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.totalAmount{
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    color: crimson;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}

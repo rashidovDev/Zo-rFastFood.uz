@@ -1,0 +1,26 @@
+.cart{
+    position:fixed;
+    background-color: #fff;
+    height: 100%;
+    width: 550px;
+    z-index: 4;
+    right: 0;
+    padding:15px 30px;
+    transition: 0.5s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: scroll;
+}
+.cartTop{
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+@media (max-width : 700px) {
+    .cart{
+        width: 390px;
+        border-radius: 10px;
+    }
+}

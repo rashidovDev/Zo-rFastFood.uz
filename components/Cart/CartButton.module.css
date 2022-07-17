@@ -1,0 +1,21 @@
+.cartOrder{
+    cursor: pointer;
+    position: fixed;
+    margin-top: 30px;
+    width: 500px;
+    padding: 0 30px;
+    height: 50px;
+    align-items: center;
+    background: crimson;
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+    justify-content: space-between;
+    border-radius: 10px;
+    bottom: 30px;
+}
+@media (max-width : 700px) {
+    .cartOrder {
+        width: 350px;
+    }
+}
