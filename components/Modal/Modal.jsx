@@ -7,8 +7,6 @@ import ModalItem from './ModalItem';
 
 const Modal = ({ modal, setModal, value }) => {
 
-    const cartItem = useSelector(state => state.cart.items)
-
     const modalClasses = [classes.myModal]
     if (modal) {
         modalClasses.push(classes.active)
@@ -28,6 +26,7 @@ const Modal = ({ modal, setModal, value }) => {
                               <ModalItem 
                               key =  {value.name}
                               id =   {value.id}
+                              setModal = {setModal}
                               name = {value.name}
                               image = {value.image}
                               title = {value.title}

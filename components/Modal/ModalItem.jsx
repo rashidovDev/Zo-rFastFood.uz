@@ -6,7 +6,7 @@ import { cartAction } from '../store/Shopping-Cart/cartSlice';
 import { uiAction } from '../store/Shopping-Cart/uiSlice';
 
 const ModalItem = (props) => {
-    const {name,title, price,image,id} = props;
+    const {name,title, price,image,id,setModal} = props;
 
     const dispatch = useDispatch()
 
@@ -14,9 +14,7 @@ const ModalItem = (props) => {
         dispatch(cartAction.addItemToCart({
             id,image,name,price
         }))
-    }
-    const removeFromCart = () => {
-        dispatch(cartAction.removeItemFromCart(id))
+        setModal(false)
     }
 
   return (
@@ -32,13 +30,6 @@ const ModalItem = (props) => {
         <p className='text-2xl mb-5'>{name}</p> 
         <p className='mb-10'>{title}</p>
      <div className='flex justify-between mb-3'>
-            {/* <div>
-                <p className='text-lg'>Количество</p>
-            </div>
-            <div>
-                <button onClick={addToCart} className={classes.btnModals}>-</button>
-                <button onClick={removeFromCart} className={classes.btnModals}>+</button>
-            </div> */}
         </div>
         <div className='flex justify-between mb-5'>
             <div>

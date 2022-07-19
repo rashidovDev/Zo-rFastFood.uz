@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Booked from './Booked/Booked';
 import MenuItems from './MenuItems'
 import Modal from './Modal/Modal'
 import Total from './TotalPurchase/Total';
@@ -6,12 +7,12 @@ import Total from './TotalPurchase/Total';
 const Menu = () => {
 
   const [modal, setModal]= useState(false);
-const [value, setValue]= useState(null);
+  const [value, setValue]= useState(null);
 
   return (
     <>
     <Total/>
-    
+     <Booked/>
     <Modal modal={modal} setModal={setModal} value={value}/>
     <div className='bg-slate-100 max-w-full max-h-full py-5 text-center '>
     <MenuItems setValue={setValue} setModal={setModal}  itemType={'lavash'}  title={"Лаваши"} scroll={'lavash'}/>  

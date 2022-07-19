@@ -1,0 +1,58 @@
+.myBook{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    display: none;
+    background-color: rgba(0,0,0,.5);
+}
+.myBookContent{
+    position: relative;
+    padding: 30px 30px;
+    width: 520px;
+    height: 350px;
+    margin: auto;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.myBook.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iks{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 30px;
+}
+.bookItems{
+  text-align: center;
+  padding: 20px 10px;
+}
+.bookItems input{
+    border: 1px solid crimson;
+    outline: none;
+    width: 70%;
+    padding: 7px;
+    border-radius: 10px;
+}
+.bookButtons{
+    padding: 25px 0;
+}
+.bookBtn{
+    padding: 10px 20px;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+@media (max-width : 700px) {
+    .myBookContent{
+        width: 350px;
+        padding: 20px 20px;
+    }
+}

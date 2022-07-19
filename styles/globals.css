@@ -52,7 +52,7 @@ a {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: crimson;
+  /* background: crimson; */
   transition: all .3s;
 } 
 .navbar > .nav-items > .nav-left p:hover::before {

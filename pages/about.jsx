@@ -9,11 +9,11 @@ const About = () => {
       <title>Zo'rFastFood |  О нас</title>
       <meta name="keywords"/>
     </Head>
-    <div className='about about p-5 m-auto justify-center w-3/4'>
+    <div className="about about p-5 m-auto justify-center w-3/4">
       {about.map((item,idx)=> (
          <div key={idx}> 
-             <p className='text-center text-5xl py-5 font-semibold'>{item.title}</p>
-              <p className='text-xl'>{item.text}</p>
+             <p className="text-center text-5xl py-5 font-semibold">{item.title}</p>
+              <p className="text-xl">{item.text}</p>
          </div>
       ))}
      
