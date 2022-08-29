@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import classes from './CartItem.module.css'
 import { MdDelete } from 'react-icons/md';
-import {useSelector,useDispatch} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import { cartAction } from '../store/Shopping-Cart/cartSlice';
 
 const CartItem = (props) => {
@@ -49,4 +49,4 @@ const CartItem = (props) => {
   )
 }
 
-export default CartItem
+export default CartItem;
