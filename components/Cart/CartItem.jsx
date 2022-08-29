@@ -26,7 +26,7 @@ const CartItem = (props) => {
     <>
     <div className={classes.cartItem}>
            <div className={classes.cartInfo}>
-            <Image src={image} width={60} height={60}/>
+            <Image src={image} width={60} height={60} alt="image"/>
             <div className={classes.cartName}>
                 <p className='mb-2'>{name}</p>
                 <p className='text-red-600 font-semibold'>{price}</p>     
