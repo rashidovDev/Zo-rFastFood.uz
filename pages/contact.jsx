@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { contact } from './data'
+import { contact } from '../data'
 
 const Contact = () => {
   return (

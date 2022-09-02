@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head';
-import { branch } from './data'
+import { branch } from '../data'
 import {MdLocationOn } from 'react-icons/md';
 
 const Branches = () => {

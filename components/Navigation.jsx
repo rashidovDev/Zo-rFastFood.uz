@@ -1,5 +1,5 @@
 import React from 'react'
-import { foodModes } from '../pages/data'
+import { foodModes } from '../data'
 import { Link as Links } from "react-scroll"
 
 const Navigation = () => {

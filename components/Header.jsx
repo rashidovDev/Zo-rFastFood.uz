@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from "next/image";
 import styles from "../styles/Home.module.css"
-import { navigation } from '../pages/data';
+import { navigation } from '../data';
 import  {BsTelephoneFill} from "react-icons/bs";
 import { useState } from 'react';
-import { foodModes } from '../pages/data';
+import { foodModes } from '../data';
 import Link from 'next/link';
 
 const Header = () => {

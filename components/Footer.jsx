@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image"
 import Link from 'next/link'
-import { navigation } from '../pages/data'
-import { network } from '../pages/data'
+import { navigation } from '../data'
+import { network } from '../data'
 
 const Footer = () => {
   return (

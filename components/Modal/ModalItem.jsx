@@ -23,7 +23,7 @@ const ModalItem = (props) => {
         <Image width={70} height={70}
             src={require('../../assets/logo.png')} />
 
-        <Image width={220} height={150} src={image} alt={name} />
+        <Image width={220} height={150} src={image} alt="modal" />
         <p className='text-center text-rose-600 text-lg p-2 font-semibold'>{name}</p>
     </div>
     <div>

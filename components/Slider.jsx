@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { slider } from '../pages/data';
+import { slider } from '../data';
 
 const Slider = () => {
   return (
