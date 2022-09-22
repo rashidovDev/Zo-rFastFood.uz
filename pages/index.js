@@ -4,9 +4,6 @@ import Navigation from '../components/Navigation'
 import Slider from '../components/Slider'
 
 export default function Home() {
-
-  
-
   return (
    <>   
     <Head>
