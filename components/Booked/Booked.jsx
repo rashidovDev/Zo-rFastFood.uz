@@ -23,9 +23,7 @@ const Booked = () => {
     const closeToggle = () => {
         dispatch(bookAction.toggle())
     }
-
-
-
+    
     return (
         <>
             <div className={BookClasses.join(" ")}>

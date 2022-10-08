@@ -6,10 +6,18 @@ import  {BsTelephoneFill} from "react-icons/bs";
 import { useState } from 'react';
 import { foodModes } from '../data';
 import Link from 'next/link';
+import { useDispatch } from 'react-redux';
+import { bookAction } from './store/Shopping-Cart/bookedSlice';
 
 const Header = () => {
 
   const [isOpen, setIsOpen] = useState(false)
+
+  const dispatch = useDispatch()
+
+  const openToggle = () => {
+    dispatch(bookAction.toggle())
+  }
   
   return (
     <>
@@ -31,7 +39,7 @@ const Header = () => {
             </div>
         </div>
         <div className="nav-login">
-         <button type='button'>Логин</button>
+         <button type='button' onClick={openToggle}>Логин</button>
         </div>
         <div className={`nav-toggle ${isOpen && "open"}`}
          onClick={() => setIsOpen(!isOpen)}>

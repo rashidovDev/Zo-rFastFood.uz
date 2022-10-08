@@ -17,9 +17,9 @@ const Modal = ({ modal, setModal, value }) => {
     return (
         <>
             {value &&
-                <div className={modalClasses.join(" ")}>
-                    <div className={classes.myModalContent}>
-                        <button className={classes.iks} onClick={() => setModal(false)}>
+                <div className={modalClasses.join(" ")} onClick={() => setModal(false)}>
+                    <div className={classes.myModalContent} onClick={(e) => e.stopPropagation()}>
+                        <button className={classes.iks} onClick={(e) =>  setModal(false)}>
                             <TiDeleteOutline />
                         </button>
                         {
