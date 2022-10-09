@@ -4,6 +4,7 @@ import CartButton from './CartButton'
 import CartItem from './CartItem'
 import { useSelector,useDispatch } from 'react-redux'
 import { uiAction } from '../store/Shopping-Cart/uiSlice'
+import { BsCartDash } from 'react-icons/bs';
 
 const Cart = () => {
   const dispatch = useDispatch()
@@ -34,14 +35,13 @@ const Cart = () => {
           <CartButton />
           </>
       ) ):
-         <p className='text-center mt-10 text-2xl'> У вас нет покупки</p> 
+     <>
+        <p className='text-center mt-10 text-2xl'> У вас нет покупки</p>
+        <div className={classes.noCart}>
+        <BsCartDash className={classes.cartDash}/> 
+      </div> 
+     </>
         }
-        
-       
-       
-        <div>
-
-        </div>
     </div>
   )
 }

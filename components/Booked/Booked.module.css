@@ -50,6 +50,10 @@
     text-align: center;
     border-radius: 5px;
 }
+.cartDash{
+    color: crimson;
+    width: 30px;
+  }
 @media (max-width : 700px) {
     .myBookContent{
         width: 350px;

@@ -33,7 +33,6 @@ const Modal = ({ modal, setModal, value }) => {
                               price = {value.price}
                               />
                         }
-                      
                     </div>
                 </div>
             }
@@ -41,4 +40,4 @@ const Modal = ({ modal, setModal, value }) => {
     )
 }
 
-export default Modal
+export default Modal;

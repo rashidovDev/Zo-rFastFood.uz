@@ -18,6 +18,19 @@
     justify-content: space-between;
     border-bottom: 1px solid rgb(230, 230, 230);
 }
+.noCart{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartDash{
+    color: crimson;
+    font-size: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width : 700px) {
     .cart{
         width: 390px;

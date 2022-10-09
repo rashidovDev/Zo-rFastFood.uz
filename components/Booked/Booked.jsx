@@ -26,12 +26,12 @@ const Booked = () => {
     
     return (
         <>
-            <div className={BookClasses.join(" ")}>
+            <div className={BookClasses.join(" ")} onClick={closeToggle}>
                 <div className={classes.myBookContent}>
                     <button onClick={closeToggle} className={classes.iks}>
                         <TiDeleteOutline />
                     </button>
-                    <div className={classes.bookItems}>
+                    <div className={classes.bookItems} onClick={(e) => e.stopPropagation()}>
                         <p className='text-3xl text-red-500 mb-5'>
                             {register ? "Добро пожаловать"
                             : "Регистрация" } </p>
