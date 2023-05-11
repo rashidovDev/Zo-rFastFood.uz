@@ -45,15 +45,15 @@ import sweet3 from "./assets/fastfood/sweet3.png"
 export const network = [
   {
     icon: <BsInstagram />,
-    href: 'http://instagram.com/rashidovdev',
+    href: 'http://instagram.com/sardorbekgulomov_',
   },
-  {
-    icon: <BsFacebook />,
-    href: 'http://github.com/rashidovDev',
-  },
+  // {
+  //   icon: <BsFacebook />,
+  //   href: 'http://github.com/rashidovDev',
+  // },
   {
     icon: <BsTelegram />,
-    href: 'http://t.me/anvar_rashidov',
+    href: 'http://t.me/Leader9091',
   },
   
 ]
