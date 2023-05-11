@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className='footer-contact'>
            <p>Заказывайте по номеру</p>
-           <p>+998-90-121-01-28</p>
+           <p>+998-88-034-90-99</p>
         </div>
       </div>
       <div className='footer-bottom text-slate-400 flex justify-between'>

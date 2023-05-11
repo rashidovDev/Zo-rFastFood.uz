@@ -35,7 +35,7 @@ const Header = () => {
             </div>
             <div className="nav-right ">
               <p><BsTelephoneFill/></p>
-              <p>+998-90-121-01-28</p>
+              <p>+998-88-803-90-99</p>
             </div>
         </div>
         <div className="nav-login">
